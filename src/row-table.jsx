@@ -1,11 +1,10 @@
 import React from 'react';
 
-export default class RowTable{
-
+export default class RowTable extends React.Component{
 	render(){
-		let {avaUrl, firstName, lastName} = this.props;
+		let {id, avaUrl, firstName, lastName} = this.props;
 		return (
-			<tr>
+			<tr data-id={id}>
 				<td className="tableUser__col-1">
 					<img src={avaUrl} />
 				</td>
