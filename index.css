@@ -1,139 +1,72 @@
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600);
-body {
-    background: #ecf0f1;
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 400;
+.container{
+    width: 600px;
+    margin: 40px auto;
+}
+.user-container{
+    display: flex;
+}
+.side-bar{
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.side-bar__user{
+    padding: 30px 0;
+    text-align: center;
 }
-*:active, *:focus {
-    border: 0;
-    outline: 0;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-#card {
-    width: 25rem;
+.user__avatar {
     margin: auto;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.search--box label {
-    position: relative;
-}
-.search--box label:after {
-    position: absolute;
-    content: "";
-    border-right: .625rem solid transparent;
-    border-left: .625rem solid transparent;
-    border-bottom: .625rem solid #fff;
-    bottom: -1.0625rem;
-    right: 50%;
-    margin-right: -0.3125rem;
-}
-.search--box input[type='search'] {
-    width: 100%;
-    font: 1rem "Titillium Web", sans-serif;
-    color: #1a4e8e;
-    border: 0;
-    padding: .75rem .9375rem .9375rem;
-    background: #e6ebed;
-    border-radius: .3125rem .3125rem 0 0;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.notfound {
-    background: #fff;
-    padding: 1.875rem;
-    text-align: center;
-}
-.notfound h2 {
-    font-size: 2rem;
-    color: #2368bd;
-    margin-bottom: .625rem;
-}
-.notfound p {
-    font-size: 1rem;
-    color: #a3b6bb;
-}
-
-.github--profile {
-    width: 100%;
-}
-.github--profile__info {
-    background: #fff;
-    text-align: center;
-    padding: 1.875rem .9375rem;
-}
-.github--profile__info img {
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #808080;
     border-radius: 50%;
-    display: block;
-    box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0.5);
 }
-.github--profile__info h2 a {
-    font-size: 1.65rem;
-    color: #2368bd;
+.user__name {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
-.github--profile__info h3 {
-    font-size: 1.1885rem;
-    color: #bdcbce;
+.user__gender {
 }
-.github--profile__state {
-    background: #1a4e8e;
-    text-align: center;
-    padding: 1.875rem .9375rem;
-    border-radius: 0 0 .3125rem .3125rem;
+.user__email {
 }
-.github--profile__state ul {
-    direction: ltr;
+.tableUser{
+    width: 70%;
+    margin: 30px 30px 30px 0;
+    border: 1px solid #d3d3d3;
+    border-collapse: collapse;
+    color: #626466;
+    text-align: left;
+    cursor: pointer;
 }
-.github--profile__state li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 1rem;
-}
-.github--profile__state li:last-child {
-    margin-right: 0;
-}
-.github--profile__state a {
-    color: #fff;
-}
-.github--profile__state i {
-    font-size: 1.5rem;
+.tableUser tr:hover{
+    background-color: #E7FCFE;
+    color: #000000;
     font-weight: 700;
-    font-style: normal;
-    display: block;
 }
-.github--profile__state span {
-    font-size: .844rem;
-    letter-spacing: .0625rem;
-    color: #2776d7;
+.tableUser__user-avatar{
+    width: 40px;
+    height: 40px;
 }
-
-.hesmaili {
-    font-size: .9rem;
-    font-weight: 400;
-    color: #b4c4c8;
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    transform: translateX(-50%);
+.tableUser__head{
+    height: 60px;
+    background-color: #f6f7f8;
+    background-image: linear-gradient(#fff, #efefef);
 }
-.hesmaili a {
-    color: #2368bd;
+.tableUser__head tr{
+    height:50px;
+}
+.tableUser__col-1,
+.tableUser__col-2,
+.tableUser__col-3{
+    border:1px solid #d3d3d3;
+}
+.tableUser__col-1{
+    width: 40px;
+}
+.filter-bar{
+}
+.filter-bar__input{
+    width:120px;
+    transition: width 0.5s ease-out 0s;
+}
+.filter-bar__input:focus{
+    width:200px;
 }

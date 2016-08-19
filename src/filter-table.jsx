@@ -9,11 +9,11 @@ export default class FilterBar extends React.Component {
 		e.preventDefault();
 		let val = e.target.value;
 		let regexp = new RegExp(val,'i');
-		let userList = this.props.data.usersList;
-		let userListFiltered = val.length ? filterUser(userList, regexp) : this.props.data._ORIGINAL_USER_LIST;
+		let oUserList = this.props.data._ORIGINAL_USER_LIST;
+		let userListFiltered = val.length ? filterUser(oUserList, regexp) : oUserList;
 		this.altState({
 			usersList: userListFiltered,
-			profileSideBar: userListFiltered[0],
+			profileSidebar: userListFiltered[0],
 		});
 		function filterUser(data, regexp) {
 			return data.filter(item =>  ~item['first_name'].search(regexp));

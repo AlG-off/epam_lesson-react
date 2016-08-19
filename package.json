@@ -1,21 +1,16 @@
 {
-  "name": "react-app",
-  "version": "0.0.1",
-  "description": "React app",
+  "name": "react-webpack-demo",
+  "version": "0.0.5",
+  "description": "React Webpack Demo",
   "scripts": {
     "build": "webpack -p --config webpack.production.config.js --progress --profile --colors",
     "dev": "webpack-dev-server --progress --profile --colors"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dselkirk/react-courses"
+    "url": "https://github.com/AlG-off/epam_lesson-react"
   },
-  "keywords": [
-    "React",
-    "Webpack",
-    "Babel",
-  ],
-  "author": "Aleksey Gerasimov",
+  "author": "AlG-off",
   "license": "MIT",
   "homepage": "https://github.com/AlG-off/epam_lesson-react#readme",
   "dependencies": {
@@ -41,6 +36,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
+    "bootstrap": "^3.3.7",
     "eslint": "^3.2.0",
     "eslint-plugin-react": "^6.0.0",
     "webpack-dev-server": "1.14.1"

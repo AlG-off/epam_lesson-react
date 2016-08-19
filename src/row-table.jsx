@@ -6,7 +6,7 @@ export default class RowTable extends React.Component{
 		return (
 			<tr data-id={id}>
 				<td className="tableUser__col-1">
-					<img src={avaUrl} />
+					<img className="tableUser__user-avatar" src={avaUrl} />
 				</td>
 				<td className="tableUser__col-2">
 					{firstName}
