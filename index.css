@@ -1,0 +1,72 @@
+.container{
+    width: 600px;
+    margin: 40px auto;
+}
+.user-container{
+    display: flex;
+}
+.side-bar{
+}
+
+.side-bar__user{
+    padding: 30px 0;
+    text-align: center;
+}
+.user__avatar {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #808080;
+    border-radius: 50%;
+}
+.user__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.user__gender {
+}
+.user__email {
+}
+.tableUser{
+    width: 70%;
+    margin: 30px 30px 30px 0;
+    border: 1px solid #d3d3d3;
+    border-collapse: collapse;
+    color: #626466;
+    text-align: left;
+    cursor: pointer;
+}
+.tableUser tr:hover{
+    background-color: #E7FCFE;
+    color: #000000;
+    font-weight: 700;
+}
+.tableUser__user-avatar{
+    width: 40px;
+    height: 40px;
+}
+.tableUser__head{
+    height: 60px;
+    background-color: #f6f7f8;
+    background-image: linear-gradient(#fff, #efefef);
+}
+.tableUser__head tr{
+    height:50px;
+}
+.tableUser__col-1,
+.tableUser__col-2,
+.tableUser__col-3{
+    border:1px solid #d3d3d3;
+}
+.tableUser__col-1{
+    width: 40px;
+}
+.filter-bar{
+}
+.filter-bar__input{
+    width:120px;
+    transition: width 0.5s ease-out 0s;
+}
+.filter-bar__input:focus{
+    width:200px;
+}
